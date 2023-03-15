@@ -1,0 +1,99 @@
+.headTitleThin
+{
+    font-weight: 200;
+}
+.headTitle
+{
+    font-size: 70px;
+    margin: 0px 0px;
+    line-height: 60px;
+}
+.gridCardHeader
+{
+    margin: 0px 0px 20px 0px;
+}
+.gridCard{
+    background: #F5FAFC;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 15px 15px;
+    font-size: 18px;
+    
+}
+.gridCardContent{
+    font-size: 15px;
+}
+.hrSaperator
+{
+    height: 3px;
+    background-color: #F0F3F3;
+    margin-top: 30px;
+}
+.gridCardContentActive
+{
+    color:#49DC48;
+    text-decoration: underline;
+}
+.subTitle
+{
+    font-weight: 400;
+}
+.gridCardHeaderInner
+{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.gridCardContentInner
+{
+    font-size: 17px;
+    font-weight: 300;
+}
+.gridCardSubHeaderInner
+{
+    font-size: 16px;
+    margin: 20px 0px;
+}
+.paraContent
+{
+    font-size: 20px;
+}
+.tableMain
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tableMain tr td{
+    font-weight: 300;
+    text-align: left;
+    width: 19%;
+}
+.tableMain tbody tr {
+    border-bottom: 2px solid #ccc;
+    font-weight: 300;
+    text-align: left;
+    height: 58px;
+}
+.tableMain {
+    border-top: 2px solid #ccc;
+   margin-top: 25px;
+   width: calc(100% + 60px);
+    margin-left: -30px;
+    border-collapse: collapse;
+}
+.tdFirst
+{
+    width: 5% !important;
+    text-align: center !important;
+}
+.gridCardLarge{
+    background: #F5FAFC;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 15px 30px;
+    font-size: 18px;
+    
+}
+.lineChartParentBlock
+{
+    height: 350px;
+}
