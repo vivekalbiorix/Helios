@@ -1,9 +1,35 @@
 import { Box, Grid, Paper, Typography } from "@mui/material";
-import React,{PureComponent} from "react";
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
 import styles from "./Home.module.css";
-import LineChartMain from "./chart/LineChartMain";
+import LineChartMain from "./chart/linechart/LineChartMain";
+import RadarChartMain from "./chart/radarchart/RadarChartMain";
+import HorizontalBarChart from "./chart/barchart/HorizontalBarChart";
+import BubbleChart from "./chart/bubblechart/BubbleChart";
+import Slider from "@mui/material/Slider";
+import { styled } from "@mui/material/styles";
+import BubbleChartMain from "./chart/bubblechart/BubbleChartMain";
+import CandleStickChart from "./chart/candlestickchart/CandleStickChart";
+import { SliderThumb } from "@mui/material/Slider";
+import EarningBar from "./earningsection/EarningBar";
 
 function Home() {
+  function AirbnbThumbComponent(props) {
+    const { children, ...other } = props;
+    return (
+      <SliderThumb {...other}>
+        {children}
+        <span className="airbnb-bar" />
+        <span className="airbnb-bar" />
+        <span className="airbnb-bar" />
+      </SliderThumb>
+    );
+  }
+
+  AirbnbThumbComponent.propTypes = {
+    children: PropTypes.node,
+  };
+
   return (
     <Box sx={{ flexGrow: 1, p: 3 }}>
       <h1 className={styles.headTitle} variant="h1" component="h2">
@@ -20,7 +46,6 @@ function Home() {
           </div>
         </Grid>
         <Grid item xs>
-          {" "}
           <div className={styles.gridCard}>
             <div className={styles.gridCardHeader}>Date of Event</div>
             <div className={styles.gridCardContent}>January 24th 2023</div>
@@ -37,7 +62,6 @@ function Home() {
           </div>
         </Grid>
         <Grid item xs>
-          {" "}
           <div className={styles.gridCard}>
             <div className={styles.gridCardHeader}>Chief Executive Officer</div>
             <div className={styles.gridCardContent}>Satya Nadella</div>
@@ -84,6 +108,7 @@ function Home() {
       <h1 className={styles.subTitle} variant="h1" component="h2">
         EARNINGS POLYGRAPH
       </h1>
+      <EarningBar />
       <Grid container spacing={3} marginTop={1}>
         <Grid item xs>
           <div className={styles.gridCardLarge}>
@@ -198,7 +223,7 @@ function Home() {
           <div className={styles.gridCardLarge}>
             <div className={styles.gridCardHeaderInner}>The Unheard Truth</div>
             <div className={styles.lineChartParentBlock}>
-                <LineChartMain/>
+              <LineChartMain />
             </div>
           </div>
         </Grid>
@@ -215,6 +240,9 @@ function Home() {
               mapped across 0,30,60 and 90 days. Consensus among the models is
               the best outcome.
             </div>
+            <div className={styles.candleChartParentBlock} >
+              <CandleStickChart />
+            </div>
           </div>
         </Grid>
         <Grid item xs>
@@ -224,6 +252,9 @@ function Home() {
             </div>
             <div className={styles.gridCardContentInner}>
               Satya Nadella: Confident (65.4%), Happy (32.1%)
+            </div>
+            <div className={styles.radarChartParentBlock}>
+              <RadarChartMain />
             </div>
           </div>
         </Grid>
@@ -235,12 +266,18 @@ function Home() {
             <div className={styles.gridCardHeaderInner}>
               Industry Volatility vs Company
             </div>
+            <div className={styles.barChartParentBlock}>
+              <HorizontalBarChart />
+            </div>
           </div>
         </Grid>
         <Grid item xs>
           <div className={styles.gridCardLarge}>
             <div className={styles.gridCardHeaderInner}>
               Competitor Analysis
+            </div>
+            <div className={styles.bubbleChartParentBlock}>
+              <BubbleChartMain />
             </div>
           </div>
         </Grid>

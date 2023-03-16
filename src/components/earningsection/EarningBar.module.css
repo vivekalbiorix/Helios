@@ -1,0 +1,73 @@
+.earningRound{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background: #fff;
+    right: 50%;
+    border-radius: 15px;
+  
+}
+.earningRoundSub
+{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background: #0B1BD2;
+    top: 7.5px;
+    border-radius: 15px;
+    left: 7.5px;
+}
+.earningBarsub{
+    background-color: #49DC48;
+    width: 31%;
+    height: 25px;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+}
+.earningBarMain{
+    background-color: #0B1BD2;
+    height: 25px;
+    border-radius: 15px;
+    position: relative;
+}
+.earningBarArrorw
+{
+    position: absolute;
+    top: -20px;
+    left: 20%;
+}
+.earningBarOuter{
+    position: relative;
+}
+.earningBarBottom{
+
+}
+.earningBarBottomLeft{
+    width: 50%;
+    float: left;
+}
+.earningBarBottomRight{
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+.tooltip{
+    position: absolute;
+    display: none;
+}
+.earningBarArrorw:hover .tooltip{
+    display: block;
+}
+.tooltip::before{
+    position: absolute;
+    top: -10px;
+    left:50%;
+    margin-left: -10px;
+    content:"";
+    z-index: 9;
+    display:block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f00; 
+}
