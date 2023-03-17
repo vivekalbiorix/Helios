@@ -63,15 +63,15 @@ const data = [
 ];
 
 function RadarChartMain() {
+
   return (
     <>
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
-          <PolarGrid gridType="circle"/>
-          <PolarAngleAxis textRendering={PolarAngleAxis} dataKey="subject" />
-          <PolarRadiusAxis angle={90} domain={[0, 10]} />
+          <PolarGrid gridType="circle" />
+          <PolarAngleAxis textRendering={PolarRadiusAxis} dataKey="subject" fontSize={15}/>
+          <PolarRadiusAxis angle={-180} domain={[1, 10]} tickCount={10} stroke="#000" fontSize={15}/>
           <Radar
-        
             dataKey="A"
             stroke="#e9eea4"
             fill="#e9eea4"
@@ -83,7 +83,6 @@ function RadarChartMain() {
             fill="#0B1BD2"
             fillOpacity={0.6}
           />
-          
         </RadarChart>
       </ResponsiveContainer>
     </>

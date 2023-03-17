@@ -10,3 +10,6 @@ body {
 text.highcharts-credits {
   display: none;
 }
+.recharts-default-legend {
+  visibility: hidden;
+}

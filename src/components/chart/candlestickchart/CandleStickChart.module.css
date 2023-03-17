@@ -1,0 +1,13 @@
+.candleChartHorizontal {
+  margin: auto;
+  width: 114px;
+}
+.candleChartVerticle {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    transform: rotate(-90deg) translatex(15%);
+}
+.candleChartOuter {
+  position: relative;
+}

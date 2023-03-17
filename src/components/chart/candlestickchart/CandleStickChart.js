@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import styles from "./CandleStickChart.module.css";
 
 function CandleStickChart() {
   const state = {
@@ -287,7 +288,8 @@ function CandleStickChart() {
 
   return (
     <>
-      <div id="chart">
+      <div id="chart" className={styles.candleChartOuter}>
+        <div className={styles.candleChartVerticle}>Projected forecast</div>
         <ReactApexChart
           options={state.options}
           series={state.series}
@@ -295,6 +297,7 @@ function CandleStickChart() {
           height={350}
         />
       </div>
+      <div className={styles.candleChartHorizontal}>Time (Days)</div>
     </>
   );
 }

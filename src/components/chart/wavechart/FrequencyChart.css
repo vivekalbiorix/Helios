@@ -1,0 +1,7 @@
+
+.audio {
+    min-width: 200px;
+}
+div#waveform wave + wave {
+    display: none !important;
+}

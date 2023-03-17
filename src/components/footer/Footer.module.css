@@ -1,0 +1,15 @@
+.footerOuter {
+    padding: 20px 50px;
+    background-color: #d6e0e1;
+    align-items: center;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerOuterRight {
+    display: flex;
+      gap: 20px;
+  }
+  .footerOuterLeft {
+  }
+  

@@ -1,73 +1,105 @@
-.earningRound{
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    background: #fff;
-    right: 50%;
-    border-radius: 15px;
-  
+.earningRound {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #fff;
+  right: 50%;
+  border-radius: 15px;
 }
-.earningRoundSub
-{
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    background: #0B1BD2;
-    top: 7.5px;
-    border-radius: 15px;
-    left: 7.5px;
+.earningRoundSub {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background: #0b1bd2;
+  top: 7.5px;
+  border-radius: 15px;
+  left: 7.5px;
 }
-.earningBarsub{
-    background-color: #49DC48;
-    width: 31%;
-    height: 25px;
-    border-radius: 15px;
-    position: absolute;
-    right: 0;
+.earningBarsub {
+  background-color: #49dc48;
+  width: 31%;
+  height: 25px;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
 }
-.earningBarMain{
-    background-color: #0B1BD2;
-    height: 25px;
-    border-radius: 15px;
-    position: relative;
+.earningBarMain {
+  background-color: #0b1bd2;
+  height: 25px;
+  border-radius: 15px;
+  position: relative;
 }
-.earningBarArrorw
-{
-    position: absolute;
-    top: -20px;
-    left: 20%;
+.earningBarArrorw {
+  position: absolute;
+  top: -20px;
+  left: 20%;
 }
-.earningBarOuter{
-    position: relative;
+.earningBarOuter {
+  position: relative;
 }
-.earningBarBottom{
-
+.earningBarBottom {
 }
-.earningBarBottomLeft{
-    width: 50%;
-    float: left;
+.earningBarBottomLeft {
+  width: 50%;
+  float: left;
 }
-.earningBarBottomRight{
-    text-align: right;
-    float: right;
-    width: 50%;
+.earningBarBottomRight {
+  text-align: right;
+  float: right;
+  width: 50%;
 }
-.tooltip{
-    position: absolute;
-    display: none;
+.toolTipOuter {
+  position: absolute;
+  display: none;
+  background-color: #f5fafc;
+  width: 215px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  left: -105px;
 }
-.earningBarArrorw:hover .tooltip{
-    display: block;
+.earningBarArrorw:hover .toolTipOuter {
+  display: block;
 }
-.tooltip::before{
-    position: absolute;
-    top: -10px;
-    left:50%;
-    margin-left: -10px;
-    content:"";
-    z-index: 9;
-    display:block;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #f00; 
+.tootipContent::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  content: "";
+  z-index: 9;
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f5fafc;
+}
+.toolTipHeader {
+  font-weight: 600;
+  font-size: 15px;
+}
+.tootipContent {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.earningRoundOuter:hover .toolTip2Outer {
+  display: block;
+}
+.earningRoundOuter {
+  position: relative;
+}
+.toolTip2Outer {
+  position: absolute;
+  display: none;
+  background-color: #f5fafc;
+  width: 140px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  top: 35px;
+  left: -68px;
+}
+.tootipRateTotal {
+  font-size: 17px;
+  font-weight: 200;
 }

@@ -78,9 +78,10 @@
   font-weight: 500;
   padding: 15px 30px;
   font-size: 18px;
+  min-height: 550px;
 }
 .lineChartParentBlock {
-  height: 500px;
+
 }
 .radarChartParentBlock {
   height: 450px;
@@ -93,4 +94,12 @@
 }
 .bubbleChartParentBlock {
   height: 450px;
+}
+.waveChartParentBlock
+{
+  height: 150px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

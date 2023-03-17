@@ -7,6 +7,7 @@ import {
   Label,
   Legend,
   ResponsiveContainer,
+  
 } from "recharts";
 import styles from "./LineChartMain.module.css";
 
@@ -81,42 +82,48 @@ const data = [
 function LineChartMain() {
   return (
     <>
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <XAxis>
-            <Label value="Time Since Event Start (seconds)" position="bottom" strokeWidth="1" className={styles.xAxisLabel}/>
-          </XAxis>
-          <YAxis>
-            <Label value="Discordance" position="centerBottom" angle={-90} strokeWidth="1" className={styles.yAxisLabel}/>
-          </YAxis>
-         
-          <Line
-            type="basis"
-            dataKey="pv"
-            stroke="#0b1bd2"
-            strokeWidth="2"
-            dot={false}
-            tick
-          />
-          <Line
-            type="basis"
-            dataKey="uv"
-            stroke="#8dc73f"
-            strokeWidth="2"
-            dot={false}
-          />
-        </LineChart>
-      </ResponsiveContainer>
+      <div className={styles.lineChartOuter}>
+        <div className={styles.lineChartVerticle}>Discordance</div>
+        <div className={styles.lineChartInner}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart
+              width={500}
+              height={300}
+              data={data}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <XAxis></XAxis>
+              <YAxis></YAxis>
+
+              <Line
+                type="basis"
+                dataKey="pv"
+                stroke="#0b1bd2"
+                strokeWidth="2"
+                dot={false}
+                tick
+              />
+              <Line
+                type="basis"
+                dataKey="uv"
+                stroke="#8dc73f"
+                strokeWidth="2"
+                dot={false}
+              />
+              <Legend></Legend>
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className={styles.lineChartHorizontal}>
+          Time Since Event Start (seconds)
+        </div>
+      </div>
     </>
   );
 }
