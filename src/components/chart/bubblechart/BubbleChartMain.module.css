@@ -1,0 +1,18 @@
+.bubbleVerticleLeft {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: rotate(-90deg) translatex(15%);
+}
+.bubbleVerticleRight {
+  position: absolute;
+  right: -120px;
+  top: 50%;
+  transform: rotate(-90deg) translatex(15%);
+}
+.bubbleHorizontal {
+  text-align: center;
+}
+.bubbleChartOuter {
+    position: relative;
+}

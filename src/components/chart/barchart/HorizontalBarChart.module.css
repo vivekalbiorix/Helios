@@ -1,0 +1,12 @@
+.barLableText {
+}
+.barChartHorizontal {
+  text-align: center;
+  margin-top: 40px;
+}
+.barChartVerticle {
+  position: absolute;
+  left: -170px;
+  top: 50%;
+  transform: rotate(-90deg) translatex(15%);
+}

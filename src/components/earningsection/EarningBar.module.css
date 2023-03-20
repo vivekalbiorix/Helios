@@ -57,6 +57,7 @@
   border-radius: 5px;
   z-index: 1;
   left: -105px;
+  margin-bottom:80px;
 }
 .earningBarArrorw:hover .toolTipOuter {
   display: block;

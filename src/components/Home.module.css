@@ -78,7 +78,7 @@
   font-weight: 500;
   padding: 15px 30px;
   font-size: 18px;
-  min-height: 550px;
+  min-height: 580px;
 }
 .lineChartParentBlock {
 
@@ -87,13 +87,18 @@
   height: 450px;
 }
 .barChartParentBlock {
+  position: relative;
   height: 450px;
 }
 .candleChartParentBlock {
   height: 450px;
 }
 .bubbleChartParentBlock {
+  position: relative;
   height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .waveChartParentBlock
 {
